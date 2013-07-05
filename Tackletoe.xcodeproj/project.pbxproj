@@ -24,6 +24,11 @@
 		F89BFA5D178701E400EF10DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89BFA35178701E400EF10DA /* Foundation.framework */; };
 		F89BFA65178701E400EF10DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F89BFA63178701E400EF10DA /* InfoPlist.strings */; };
 		F89BFA68178701E400EF10DA /* TackletoeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F89BFA67178701E400EF10DA /* TackletoeTests.m */; };
+		F89BFA741787022200EF10DA /* TKTOBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F89BFA731787022200EF10DA /* TKTOBoard.m */; };
+		F89BFA771787022D00EF10DA /* TKTOMark.m in Sources */ = {isa = PBXBuildFile; fileRef = F89BFA761787022D00EF10DA /* TKTOMark.m */; };
+		F89BFA7B1787029F00EF10DA /* TKTOGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F89BFA7A1787029F00EF10DA /* TKTOGame.m */; };
+		F89BFA7E178702A800EF10DA /* TKTOPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F89BFA7D178702A800EF10DA /* TKTOPlayer.m */; };
+		F89BFA8117870B6D00EF10DA /* TKTOMove.m in Sources */ = {isa = PBXBuildFile; fileRef = F89BFA8017870B6D00EF10DA /* TKTOMove.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,16 @@
 		F89BFA64178701E400EF10DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F89BFA66178701E400EF10DA /* TackletoeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TackletoeTests.h; sourceTree = "<group>"; };
 		F89BFA67178701E400EF10DA /* TackletoeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TackletoeTests.m; sourceTree = "<group>"; };
+		F89BFA721787022200EF10DA /* TKTOBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTOBoard.h; sourceTree = "<group>"; };
+		F89BFA731787022200EF10DA /* TKTOBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTOBoard.m; sourceTree = "<group>"; };
+		F89BFA751787022D00EF10DA /* TKTOMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTOMark.h; sourceTree = "<group>"; };
+		F89BFA761787022D00EF10DA /* TKTOMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTOMark.m; sourceTree = "<group>"; };
+		F89BFA791787029F00EF10DA /* TKTOGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTOGame.h; sourceTree = "<group>"; };
+		F89BFA7A1787029F00EF10DA /* TKTOGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTOGame.m; sourceTree = "<group>"; };
+		F89BFA7C178702A800EF10DA /* TKTOPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTOPlayer.h; sourceTree = "<group>"; };
+		F89BFA7D178702A800EF10DA /* TKTOPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTOPlayer.m; sourceTree = "<group>"; };
+		F89BFA7F17870B6D00EF10DA /* TKTOMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTOMove.h; sourceTree = "<group>"; };
+		F89BFA8017870B6D00EF10DA /* TKTOMove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTOMove.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +104,8 @@
 		F89BFA27178701E300EF10DA = {
 			isa = PBXGroup;
 			children = (
+				F89BFA781787028A00EF10DA /* Game Logic */,
+				F89BFA71178701FF00EF10DA /* Game View */,
 				F89BFA39178701E400EF10DA /* Tackletoe */,
 				F89BFA60178701E400EF10DA /* TackletoeTests */,
 				F89BFA32178701E400EF10DA /* Frameworks */,
@@ -161,6 +178,31 @@
 				F89BFA63178701E400EF10DA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F89BFA71178701FF00EF10DA /* Game View */ = {
+			isa = PBXGroup;
+			children = (
+				F89BFA721787022200EF10DA /* TKTOBoard.h */,
+				F89BFA731787022200EF10DA /* TKTOBoard.m */,
+				F89BFA751787022D00EF10DA /* TKTOMark.h */,
+				F89BFA761787022D00EF10DA /* TKTOMark.m */,
+			);
+			name = "Game View";
+			path = Tackletoe;
+			sourceTree = "<group>";
+		};
+		F89BFA781787028A00EF10DA /* Game Logic */ = {
+			isa = PBXGroup;
+			children = (
+				F89BFA791787029F00EF10DA /* TKTOGame.h */,
+				F89BFA7A1787029F00EF10DA /* TKTOGame.m */,
+				F89BFA7C178702A800EF10DA /* TKTOPlayer.h */,
+				F89BFA7D178702A800EF10DA /* TKTOPlayer.m */,
+				F89BFA7F17870B6D00EF10DA /* TKTOMove.h */,
+				F89BFA8017870B6D00EF10DA /* TKTOMove.m */,
+			);
+			name = "Game Logic";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +320,11 @@
 				F89BFA40178701E400EF10DA /* main.m in Sources */,
 				F89BFA44178701E400EF10DA /* TKTOAppDelegate.m in Sources */,
 				F89BFA53178701E400EF10DA /* TKTOViewController.m in Sources */,
+				F89BFA741787022200EF10DA /* TKTOBoard.m in Sources */,
+				F89BFA771787022D00EF10DA /* TKTOMark.m in Sources */,
+				F89BFA7B1787029F00EF10DA /* TKTOGame.m in Sources */,
+				F89BFA7E178702A800EF10DA /* TKTOPlayer.m in Sources */,
+				F89BFA8117870B6D00EF10DA /* TKTOMove.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
