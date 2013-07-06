@@ -12,7 +12,7 @@
 
 @interface TKTOGame : NSObject
 
--(BOOL) player:(TKTOPlayer*)player willMoveTo:
--(void) player:(TKTOPlayer*)player didMoveTo:
+-(BOOL) player:(TKTOPlayer*)player willMoveTo:(TKTOMove*)move;
+-(void) player:(TKTOPlayer*)player didMoveTo:(TKTOMove*)move;
 
 @end
