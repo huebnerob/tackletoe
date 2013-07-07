@@ -7,6 +7,7 @@
 //
 
 #import "TKTOGame.h"
+@class TKTOViewController;
 
 @implementation TKTOGame {
     TKTOBoard *mainBoard;

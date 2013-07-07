@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "TKTOBoard.h"
-#import "TKTOPlayer.h"
+@class TKTOPlayer;
+@class TKTOMove;
 
 @interface TKTOGame : NSObject
 

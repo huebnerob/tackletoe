@@ -9,6 +9,7 @@
 #import "TKTOViewController.h"
 
 @interface TKTOViewController ()
+@property (weak, nonatomic) IBOutlet TKTOBoard *board;
 
 @end
 
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void) viewDidAppear:(BOOL)animated {
+    [_board initSubboards];
 }
 
 - (void)didReceiveMemoryWarning

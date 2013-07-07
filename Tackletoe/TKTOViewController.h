@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TKTOGame.h"
+#import "TKTOPlayer.h"
 
 @interface TKTOViewController : UIViewController
 

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class TKTOPlayer;
 @interface TKTOMove : NSObject {
     int subBoardIndex;
     int boardMoveIndex;
