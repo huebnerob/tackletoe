@@ -7,6 +7,7 @@
 //
 
 #import "TKTOMove.h"
+#import "TKTOPlayer.h"
 
 @implementation TKTOMove
 

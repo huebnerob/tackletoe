@@ -11,6 +11,7 @@
 @interface TKTOMove : NSObject {
     int subBoardIndex;
     int boardMoveIndex;
+    TKTOPlayer *mover;
 }
 
 @end
