@@ -8,7 +8,9 @@
 
 #import "TKTOMark.h"
 
-@implementation TKTOMark
+@implementation TKTOMark {
+    TKTOMarkedStatus status;
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -17,6 +19,10 @@
         // Initialization code
     }
     return self;
+}
+
+-(TKTOMarkedStatus) markedStatus {
+    return status;
 }
 
 /*

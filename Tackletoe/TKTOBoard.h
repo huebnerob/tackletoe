@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TKTOMark.h"
 
-@interface TKTOBoard : UIView
+@interface TKTOBoard : UIView <TKTOMarked>
+
+-(void) initMarks;
+-(void) initSubboards;
 
 @end

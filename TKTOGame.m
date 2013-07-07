@@ -14,6 +14,8 @@
     
     TKTOPlayer *playerX;
     TKTOPlayer *playerO;
+    
+    TKTOViewController *delegate;
 }
 
 @end

@@ -12,6 +12,8 @@
 
 @interface TKTOGame : NSObject
 
+-(void) newGame;
+
 -(BOOL) player:(TKTOPlayer*)player willMoveTo:(TKTOMove*)move;
 -(void) player:(TKTOPlayer*)player didMoveTo:(TKTOMove*)move;
 

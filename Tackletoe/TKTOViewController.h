@@ -10,4 +10,6 @@
 
 @interface TKTOViewController : UIViewController
 
+-(void) game:(TKTOGame*)game didEnd:(TKTOPlayer*)winner;
+
 @end

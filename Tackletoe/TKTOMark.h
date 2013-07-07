@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TKTOMark : UIView
+typedef enum TKTOMarkedStatus {
+    TKTOMarkedStatusX,
+    TKTOMarkedStatusO,
+    TKTOMarkedStatusUnmarked
+} TKTOMarkedStatus;
+
+@protocol TKTOMarked <NSObject>
+
+-(TKTOMarkedStatus) markedStatus;
+
+@end
+
+@interface TKTOMark : UIView <TKTOMarked>
 
 @end

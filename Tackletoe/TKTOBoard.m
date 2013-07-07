@@ -22,10 +22,43 @@
     return self;
 }
 
--(void) checkWin {
-	NSArray *winPatterns = @[ @[@1,@2,@3] , @[@4,@5,@6] , [@7,@8,@9] ]; 
+-(void) initMarks {
+    
+}
+
+-(void) initSubboards {
+    
+}
+
+-(TKTOMarkedStatus) checkWin {
+	NSArray *winPatterns = @[ @[@0,@1,@2] , @[@3,@4,@5] , @[@6,@7,@8] ,
+                              @[@0,@3,@6] , @[@1,@4,@7] , @[@2,@5,@7] ,
+                              @[@0,@4,@8] , @[@2,@4,@6] ];
 	
-	NSArray *p1marks
+	NSMutableArray *Xmarks = [NSMutableArray array];
+    NSMutableArray *Omarks = [NSMutableArray array];
+    
+    for( int i = 0; i < [cells count]; i++ ) {
+        switch ([cells[i] markedStatus]) {
+            case TKTOMarkedStatusX:
+                [Xmarks addObject:[NSNumber numberWithInt:i]];
+                break;
+            case TKTOMarkedStatusO:
+                [Omarks addObject:[NSNumber numberWithInt:i]];
+                break;
+            case TKTOMarkedStatusUnmarked:
+                
+                break;
+            default:
+                break;
+        }
+    }
+    
+    return TKTOMarkedStatusUnmarked;
+}
+
+-(TKTOMarkedStatus) markedStatus {
+    return [self checkWin];
 }
 
 /*
