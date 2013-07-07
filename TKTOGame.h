@@ -15,4 +15,8 @@
 -(BOOL) player:(TKTOPlayer*)player willMoveTo:(TKTOMove*)move;
 -(void) player:(TKTOPlayer*)player didMoveTo:(TKTOMove*)move;
 
+//internal game logic
+
+-(BOOL) checkWin;
+
 @end

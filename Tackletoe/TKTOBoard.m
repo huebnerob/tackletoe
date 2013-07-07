@@ -8,7 +8,10 @@
 
 #import "TKTOBoard.h"
 
-@implementation TKTOBoard
+@implementation TKTOBoard {
+	NSArray *cells; //type: tktomark or tktoboard
+	
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -17,6 +20,12 @@
         // Initialization code
     }
     return self;
+}
+
+-(void) checkWin {
+	NSArray *winPatterns = @[ @[@1,@2,@3] , @[@4,@5,@6] , [@7,@8,@9] ]; 
+	
+	NSArray *p1marks
 }
 
 /*
