@@ -23,15 +23,24 @@
 }
 
 -(void) initMarks {
-    
+    for(NSValue *rectValue in cellRectValues) {
+        CGRect rect = [rectValue CGRectValue];
+        TKTOMark *mark = [[TKTOMark alloc] initWithFrame:rect];
+        mark.backgroundColor = [UIColor clearColor];
+        [self addSubview:mark];
+        [mark set:TKTOMarkedStatusO];
+    }
 }
 
 -(void) initSubboards {
+    NSLog(@"init subboards");
     for(NSValue *rectValue in cellRectValues) {
         CGRect rect = [rectValue CGRectValue];
         TKTOBoard *subboard = [[TKTOBoard alloc] initWithFrame:rect];
         subboard.backgroundColor = [UIColor clearColor];
         [self addSubview:subboard];
+        [subboard initMarks];
+        NSLog(@"add subboard");
     }
 }
 
@@ -40,16 +49,16 @@
                               @[@0,@3,@6] , @[@1,@4,@7] , @[@2,@5,@7] ,
                               @[@0,@4,@8] , @[@2,@4,@6] ];
 	
-	NSMutableSet *Xmarks = [NSMutableSet set];
-    NSMutableSet *Omarks = [NSMutableSet set];
+	NSMutableSet *xMarks = [NSMutableSet set];
+    NSMutableSet *oMarks = [NSMutableSet set];
     
     for( int i = 0; i < [cells count]; i++ ) {
         switch ([cells[i] markedStatus]) {
             case TKTOMarkedStatusX:
-                [Xmarks addObject:[NSNumber numberWithInt:i]];
+                [xMarks addObject:[NSNumber numberWithInt:i]];
                 break;
             case TKTOMarkedStatusO:
-                [Omarks addObject:[NSNumber numberWithInt:i]];
+                [oMarks addObject:[NSNumber numberWithInt:i]];
                 break;
             case TKTOMarkedStatusUnmarked:
                 
@@ -63,8 +72,8 @@
     int oWinPattern = -1;
     for(int i = 0; i < [winPatterns count]; i++) {
     	NSSet *pattern = [NSSet setWithArray:winPatterns[i]];
-    	if([pattern isSubsetOfSet:Xmarks]) xWinPattern = i;
-    	if([pattern isSubsetOfSet:Omarks]) oWinPattern = i;
+    	if([pattern isSubsetOfSet:xMarks]) xWinPattern = i;
+    	if([pattern isSubsetOfSet:oMarks]) oWinPattern = i;
     }
     
     if(xWinPattern) return TKTOMarkedStatusX;

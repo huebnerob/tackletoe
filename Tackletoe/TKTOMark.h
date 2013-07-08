@@ -16,6 +16,7 @@ typedef enum TKTOMarkedStatus {
 
 @protocol TKTOMarked <NSObject>
 
+-(void) set:(TKTOMarkedStatus)newStatus;
 -(TKTOMarkedStatus) markedStatus;
 
 @end
