@@ -24,11 +24,18 @@
 		F89BFA5D178701E400EF10DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89BFA35178701E400EF10DA /* Foundation.framework */; };
 		F89BFA65178701E400EF10DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F89BFA63178701E400EF10DA /* InfoPlist.strings */; };
 		F89BFA68178701E400EF10DA /* TackletoeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F89BFA67178701E400EF10DA /* TackletoeTests.m */; };
-		F89BFA741787022200EF10DA /* TKTOBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F89BFA731787022200EF10DA /* TKTOBoard.m */; };
-		F89BFA771787022D00EF10DA /* TKTOMark.m in Sources */ = {isa = PBXBuildFile; fileRef = F89BFA761787022D00EF10DA /* TKTOMark.m */; };
+		F89BFA741787022200EF10DA /* TKTOBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F89BFA731787022200EF10DA /* TKTOBoardView.m */; };
+		F89BFA771787022D00EF10DA /* TKTOMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = F89BFA761787022D00EF10DA /* TKTOMarkView.m */; };
 		F89BFA7B1787029F00EF10DA /* TKTOGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F89BFA7A1787029F00EF10DA /* TKTOGame.m */; };
 		F89BFA7E178702A800EF10DA /* TKTOPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F89BFA7D178702A800EF10DA /* TKTOPlayer.m */; };
 		F89BFA8117870B6D00EF10DA /* TKTOMove.m in Sources */ = {isa = PBXBuildFile; fileRef = F89BFA8017870B6D00EF10DA /* TKTOMove.m */; };
+		F8D3770D178C5F29008EC30A /* tackletoe114.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D3770C178C5F29008EC30A /* tackletoe114.png */; };
+		F8D3770F178C5F36008EC30A /* tackletoe57.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D3770E178C5F36008EC30A /* tackletoe57.png */; };
+		F8D37711178C5FCB008EC30A /* tackletoe144.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D37710178C5FCB008EC30A /* tackletoe144.png */; };
+		F8D37713178C5FD0008EC30A /* tackletoe72.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D37712178C5FD0008EC30A /* tackletoe72.png */; };
+		F8D37716178C62C3008EC30A /* TKTOGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D37715178C62C3008EC30A /* TKTOGameController.m */; };
+		F8D37719178C6FA5008EC30A /* TKTOBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D37718178C6FA5008EC30A /* TKTOBoard.m */; };
+		F8D3771C178C772F008EC30A /* TKTOMark.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D3771B178C772F008EC30A /* TKTOMark.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,16 +72,26 @@
 		F89BFA64178701E400EF10DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F89BFA66178701E400EF10DA /* TackletoeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TackletoeTests.h; sourceTree = "<group>"; };
 		F89BFA67178701E400EF10DA /* TackletoeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TackletoeTests.m; sourceTree = "<group>"; };
-		F89BFA721787022200EF10DA /* TKTOBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTOBoard.h; sourceTree = "<group>"; };
-		F89BFA731787022200EF10DA /* TKTOBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTOBoard.m; sourceTree = "<group>"; };
-		F89BFA751787022D00EF10DA /* TKTOMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTOMark.h; sourceTree = "<group>"; };
-		F89BFA761787022D00EF10DA /* TKTOMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTOMark.m; sourceTree = "<group>"; };
+		F89BFA721787022200EF10DA /* TKTOBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTOBoardView.h; sourceTree = "<group>"; };
+		F89BFA731787022200EF10DA /* TKTOBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTOBoardView.m; sourceTree = "<group>"; };
+		F89BFA751787022D00EF10DA /* TKTOMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTOMarkView.h; sourceTree = "<group>"; };
+		F89BFA761787022D00EF10DA /* TKTOMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTOMarkView.m; sourceTree = "<group>"; };
 		F89BFA791787029F00EF10DA /* TKTOGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTOGame.h; sourceTree = "<group>"; };
 		F89BFA7A1787029F00EF10DA /* TKTOGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTOGame.m; sourceTree = "<group>"; };
 		F89BFA7C178702A800EF10DA /* TKTOPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTOPlayer.h; sourceTree = "<group>"; };
 		F89BFA7D178702A800EF10DA /* TKTOPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTOPlayer.m; sourceTree = "<group>"; };
 		F89BFA7F17870B6D00EF10DA /* TKTOMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTOMove.h; sourceTree = "<group>"; };
 		F89BFA8017870B6D00EF10DA /* TKTOMove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTOMove.m; sourceTree = "<group>"; };
+		F8D3770C178C5F29008EC30A /* tackletoe114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tackletoe114.png; sourceTree = "<group>"; };
+		F8D3770E178C5F36008EC30A /* tackletoe57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tackletoe57.png; sourceTree = "<group>"; };
+		F8D37710178C5FCB008EC30A /* tackletoe144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tackletoe144.png; sourceTree = "<group>"; };
+		F8D37712178C5FD0008EC30A /* tackletoe72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tackletoe72.png; sourceTree = "<group>"; };
+		F8D37714178C62C3008EC30A /* TKTOGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTOGameController.h; sourceTree = "<group>"; };
+		F8D37715178C62C3008EC30A /* TKTOGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTOGameController.m; sourceTree = "<group>"; };
+		F8D37717178C6FA5008EC30A /* TKTOBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKTOBoard.h; path = Tackletoe/TKTOBoard.h; sourceTree = "<group>"; };
+		F8D37718178C6FA5008EC30A /* TKTOBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKTOBoard.m; path = Tackletoe/TKTOBoard.m; sourceTree = "<group>"; };
+		F8D3771A178C772F008EC30A /* TKTOMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTOMark.h; sourceTree = "<group>"; };
+		F8D3771B178C772F008EC30A /* TKTOMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTOMark.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +121,12 @@
 		F89BFA27178701E300EF10DA = {
 			isa = PBXGroup;
 			children = (
+				F8D37712178C5FD0008EC30A /* tackletoe72.png */,
+				F8D37710178C5FCB008EC30A /* tackletoe144.png */,
+				F8D3770E178C5F36008EC30A /* tackletoe57.png */,
+				F8D3770C178C5F29008EC30A /* tackletoe114.png */,
+				F8D37714178C62C3008EC30A /* TKTOGameController.h */,
+				F8D37715178C62C3008EC30A /* TKTOGameController.m */,
 				F89BFA781787028A00EF10DA /* Game Logic */,
 				F89BFA71178701FF00EF10DA /* Game View */,
 				F89BFA39178701E400EF10DA /* Tackletoe */,
@@ -183,10 +206,10 @@
 		F89BFA71178701FF00EF10DA /* Game View */ = {
 			isa = PBXGroup;
 			children = (
-				F89BFA721787022200EF10DA /* TKTOBoard.h */,
-				F89BFA731787022200EF10DA /* TKTOBoard.m */,
-				F89BFA751787022D00EF10DA /* TKTOMark.h */,
-				F89BFA761787022D00EF10DA /* TKTOMark.m */,
+				F89BFA721787022200EF10DA /* TKTOBoardView.h */,
+				F89BFA731787022200EF10DA /* TKTOBoardView.m */,
+				F89BFA751787022D00EF10DA /* TKTOMarkView.h */,
+				F89BFA761787022D00EF10DA /* TKTOMarkView.m */,
 			);
 			name = "Game View";
 			path = Tackletoe;
@@ -199,6 +222,10 @@
 				F89BFA7A1787029F00EF10DA /* TKTOGame.m */,
 				F89BFA7C178702A800EF10DA /* TKTOPlayer.h */,
 				F89BFA7D178702A800EF10DA /* TKTOPlayer.m */,
+				F8D37717178C6FA5008EC30A /* TKTOBoard.h */,
+				F8D37718178C6FA5008EC30A /* TKTOBoard.m */,
+				F8D3771A178C772F008EC30A /* TKTOMark.h */,
+				F8D3771B178C772F008EC30A /* TKTOMark.m */,
 				F89BFA7F17870B6D00EF10DA /* TKTOMove.h */,
 				F89BFA8017870B6D00EF10DA /* TKTOMove.m */,
 			);
@@ -283,6 +310,10 @@
 				F89BFA4A178701E400EF10DA /* Default-568h@2x.png in Resources */,
 				F89BFA4D178701E400EF10DA /* MainStoryboard_iPhone.storyboard in Resources */,
 				F89BFA50178701E400EF10DA /* MainStoryboard_iPad.storyboard in Resources */,
+				F8D3770D178C5F29008EC30A /* tackletoe114.png in Resources */,
+				F8D3770F178C5F36008EC30A /* tackletoe57.png in Resources */,
+				F8D37711178C5FCB008EC30A /* tackletoe144.png in Resources */,
+				F8D37713178C5FD0008EC30A /* tackletoe72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,11 +351,14 @@
 				F89BFA40178701E400EF10DA /* main.m in Sources */,
 				F89BFA44178701E400EF10DA /* TKTOAppDelegate.m in Sources */,
 				F89BFA53178701E400EF10DA /* TKTOViewController.m in Sources */,
-				F89BFA741787022200EF10DA /* TKTOBoard.m in Sources */,
-				F89BFA771787022D00EF10DA /* TKTOMark.m in Sources */,
+				F89BFA741787022200EF10DA /* TKTOBoardView.m in Sources */,
+				F89BFA771787022D00EF10DA /* TKTOMarkView.m in Sources */,
 				F89BFA7B1787029F00EF10DA /* TKTOGame.m in Sources */,
 				F89BFA7E178702A800EF10DA /* TKTOPlayer.m in Sources */,
 				F89BFA8117870B6D00EF10DA /* TKTOMove.m in Sources */,
+				F8D37716178C62C3008EC30A /* TKTOGameController.m in Sources */,
+				F8D37719178C6FA5008EC30A /* TKTOBoard.m in Sources */,
+				F8D3771C178C772F008EC30A /* TKTOMark.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +549,7 @@
 				F89BFA6D178701E400EF10DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F89BFA6E178701E400EF10DA /* Build configuration list for PBXNativeTarget "TackletoeTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +558,7 @@
 				F89BFA70178701E400EF10DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

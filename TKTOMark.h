@@ -2,11 +2,11 @@
 //  TKTOMark.h
 //  Tackletoe
 //
-//  Created by Robert Huebner on 7/5/13.
+//  Created by Robert Huebner on 7/9/13.
 //  Copyright (c) 2013 Robert Huebner. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 typedef enum TKTOMarkedStatus {
     TKTOMarkedStatusX,
@@ -16,11 +16,12 @@ typedef enum TKTOMarkedStatus {
 
 @protocol TKTOMarked <NSObject>
 
--(void) set:(TKTOMarkedStatus)newStatus;
 -(TKTOMarkedStatus) markedStatus;
 
 @end
 
-@interface TKTOMark : UIView <TKTOMarked>
+@interface TKTOMark : NSObject <TKTOMarked>
+
+-(void) set:(TKTOMarkedStatus)newStatus;
 
 @end

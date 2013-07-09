@@ -11,12 +11,24 @@
 
 @implementation TKTOGame {
     TKTOBoard *mainBoard;
-    NSArray *subBoards; //tktoboards
+//    NSArray *subBoards; //tktoboards edit:access thru mainboard
     
     TKTOPlayer *playerX;
     TKTOPlayer *playerO;
     
-    TKTOViewController *delegate;
+    id<TKTOGameDelegate> delegate;
+}
+
++(TKTOGame*) create {
+    return [[TKTOGame alloc] init];
+}
+
+-(BOOL) player:(TKTOPlayer*)player madeMoveTo:(TKTOMove*)move {
+    return YES;
+}
+
+-(BOOL) checkWin {
+    return NO;
 }
 
 @end

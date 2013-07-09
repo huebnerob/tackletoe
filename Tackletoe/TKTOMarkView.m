@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Robert Huebner. All rights reserved.
 //
 
-#import "TKTOMark.h"
+#import "TKTOMarkView.h"
 
-@implementation TKTOMark {
+@implementation TKTOMarkView {
     TKTOMarkedStatus status;
     UIColor *xColor;
     UIColor *oColor;

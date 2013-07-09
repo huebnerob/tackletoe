@@ -7,19 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TKTOBoardView.h"
 #import "TKTOBoard.h"
 @class TKTOPlayer;
 @class TKTOMove;
 
 @interface TKTOGame : NSObject
 
--(void) newGame;
++(TKTOGame*) create;
 
--(BOOL) player:(TKTOPlayer*)player willMoveTo:(TKTOMove*)move;
--(void) player:(TKTOPlayer*)player didMoveTo:(TKTOMove*)move;
+-(BOOL) player:(TKTOPlayer*)player madeMoveTo:(TKTOMove*)move; //YES if move allowed
 
 //internal game logic
 
 -(BOOL) checkWin;
+
+@end
+
+@protocol TKTOGameDelegate <NSObject>
+
+-(void) setBoardValues: (NSArray*)boardValues;
+
+-(void) player:(TKTOPlayer*)player didMoveTo:(TKTOMove*)move;
 
 @end

@@ -9,7 +9,7 @@
 #import "TKTOViewController.h"
 
 @interface TKTOViewController ()
-@property (weak, nonatomic) IBOutlet TKTOBoard *board;
+@property (weak, nonatomic) IBOutlet TKTOBoardView *board;
 
 @end
 
@@ -23,6 +23,10 @@
 
 -(void) viewDidAppear:(BOOL)animated {
     [_board initSubboards];
+}
+
+-(void) game:(TKTOGame*)game didEnd:(TKTOPlayer*)winner {
+    
 }
 
 - (void)didReceiveMemoryWarning
